@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import NavBar from "./NavBar.jsx";
 import Jumbotron from "./Jumbotron.jsx";
 import Card from "./Card.jsx";
+import Footer from "./Footer.jsx";
 
 
 //include images into your bundle
@@ -11,7 +12,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 //create your first component
 const Home = () => {
 	return (
-		<div className="langePage">
+		<div>
 			<NavBar/>
 			<div className="container">
 				<div className="column">
@@ -19,10 +20,9 @@ const Home = () => {
 						<Jumbotron/>
 						<Card/>
 					</div>
-
 				</div>
-
 			</div>
+			<Footer/>
 		</div>
 	);
 };
